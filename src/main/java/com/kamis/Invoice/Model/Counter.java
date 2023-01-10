@@ -14,15 +14,10 @@ public class Counter {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
-    @Column(name = "Id")
     private int id;
-
-    @Column(name = "Counter_Number")
+    @Basic(optional = false)
     private String numCompteur;
-
-    @Column(name = "Type")
+    @Basic(optional = false)
     private String type;
-
 
 }
